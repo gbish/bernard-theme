@@ -96,6 +96,13 @@ nav {
 	}
 }
 
+#iire_social_widget {
+	padding-left: 0;
+	a div {
+		padding-left: 0;
+	}
+}
+
 .badges {
 	width: 100%;
 	@include clearfix;
