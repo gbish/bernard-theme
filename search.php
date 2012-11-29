@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-		<section id="primary">
-			<div id="content" role="main">
+		<div class="content">
+			<div class="single-post">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -51,7 +51,11 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
-		</section><!-- #primary -->
+			
+			<div class="right_bar">
+				<?php get_sidebar(); ?>
+			</div>
+		</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

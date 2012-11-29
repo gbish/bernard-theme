@@ -21,6 +21,9 @@ body > div {
 #base > header {
 	min-height: 200px;
 	background: url("../images/bernard_logo.png");
+	hgroup {
+		text-indent: -9999px;
+	}
 }
 
 #base > nav {
@@ -78,8 +81,10 @@ nav {
 	@include clearfix;
 }
 
-.single .main, .page .main {
-	margin: 0;
+.single, .page, .search {
+	.main {
+		margin: 0;
+	}	
 }
 
 .content, .right_bar {
@@ -98,7 +103,7 @@ nav {
 
 #iire_social_widget {
 	padding-left: 0;
-	a div {
+	a div, div {
 		padding-left: 0;
 	}
 }
@@ -212,7 +217,7 @@ nav {
 
 article {
 	h1 {
-		.entry-title {
+		&.entry-title {
 			padding-top: 0;
 		}
 	}
@@ -243,6 +248,15 @@ article {
 		.entry-content {
 			padding-top: 0;
 		}
+	}
+}
+
+.search {
+	.entry-title, .entry-content {
+		padding-left: $default_margin;
+	}
+	.entry-content form {
+		margin-top: $default_margin;
 	}
 }
 

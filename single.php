@@ -24,7 +24,7 @@ get_header(); ?>
 
 			<div class="right_bar">
 				<?php get_sidebar(); ?>
-			</div>	
+			</div>
 
 		</div><!-- #content -->
 
