@@ -226,6 +226,11 @@ article {
 			margin-bottom: 0;
 		}
 	}
+	&.page {
+		h2 {
+			margin-top: $default_margin;
+		}
+	}
 }
 
 #comments {
